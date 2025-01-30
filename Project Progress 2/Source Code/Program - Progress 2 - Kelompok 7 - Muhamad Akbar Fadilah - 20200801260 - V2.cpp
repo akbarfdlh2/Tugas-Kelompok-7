@@ -404,9 +404,9 @@ void transactionManagementMenu() {
     int choice;
     do {
         cout << "\nTransaction Management\n";
-        cout << "1. Borrow Book\n";
-        cout << "2. Return Book\n";
-        cout << "3. Extend Borrowing\n";
+        cout << "1. Pinjam Buku\n";
+        cout << "2. Kembalikan Buku\n";
+        cout << "3. Perpanjang Pinjaman\n";
         cout << "4. Delete Transaction\n";
         cout << "5. Back to Main Menu\n";
         cout << "Enter your choice: ";
@@ -558,7 +558,7 @@ void reportMenu() {
     int choice;
     do {
         cout << "\nReports\n";
-        cout << "1. Calculate Late Fee\n";
+        cout << "1. Hitung Biaya Keterlambatan\n";
         cout << "2. View Transactions\n";
         cout << "3. Back to Main Menu\n";
         cout << "Enter your choice: ";

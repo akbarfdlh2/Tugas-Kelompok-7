@@ -1,0 +1,115 @@
+ALGORITMA &PEMROGRAMAN
+Aplikasi Peminjaman dan Pengembalian Buku
+PROGRESS 3 - FINAL PROJECT
+CSF 101
+7174 - Ir. Sawali Wahyu, S.Kom., M.Kom
+Dosen Pengampu:
+
+Kelompok 7
+Muhamad Akbar Fadilah - 20200801269
+Arva Raihan Javier - 20240801344
+Denis Prastya Putra - 20240801319
+Davina Tri Febriyanti - 20240801361
+
+Daftar Isi:
+Pendahuluan
+Metode
+Rancangan
+Hasil Aplikasi
+Tujuan Presentasi:
+Memaparkan perkembangan final project pada tahap ketiga, yaitu pembuatan Aplikasi Peminjaman dan Pengembalian Buku.
+
+PENDAHULUAN
+
+Dalam era digital yang terus berkembang, perpustakaan tradisional menghadapi berbagai tantangan, seperti kesalahan pencatatan, pelacakan status buku yang tidak efisien, dan keterbatasan dalam menghasilkan laporan yang akurat. Untuk menjawab tantangan tersebut, dikembangkan Aplikasi Peminjaman dan Pengembalian Buku, sebuah sistem manajemen perpustakaan digital berbasis C++ dengan implementasi struktur data Stack. Aplikasi ini dirancang untuk mengotomatisasi proses peminjaman dan pengembalian buku, mempermudah administrasi, serta memberikan visibilitas yang lebih baik terhadap inventaris perpustakaan. Dengan fitur seperti manajemen buku, manajemen anggota, transaksi, dan pelaporan, aplikasi ini bertujuan untuk meningkatkan efisiensi operasional perpustakaan, meminimalkan kesalahan pencatatan, dan mendukung pelacakan serta pengelolaan buku yang lebih akurat dan modern.
+Pendahuluan
+
+METODE
+
+Metode utama yang digunakan dalam aplikasi ini adalah struktur data Stack, yang beroperasi dengan prinsip LIFO (Last In, First Out). Artinya, data yang dimasukkan terakhir akan diakses atau dikeluarkan terlebih dahulu. Struktur ini sangat cocok untuk mengelola proses peminjaman dan pengembalian buku, karena transaksi terbaru dapat langsung diproses terlebih dahulu.
+Metode
+
+Dalam aplikasi, Stack digunakan untuk:
+Mencatat Peminjaman Buku: Setiap buku yang dipinjam akan dimasukkan ke dalam Stack, sehingga buku yang dipinjam terakhir akan berada di posisi teratas untuk pengelolaan yang mudah.
+Mengelola Pengembalian Buku: Saat buku dikembalikan, data di Stack akan diperbarui dengan menghapus atau mengganti data sesuai dengan buku yang dikembalikan.
+Pelacakan Status Buku: Dengan memanfaatkan sifat LIFO, aplikasi dapat memastikan bahwa data peminjaman dan pengembalian dikelola secara terstruktur dan efisien.
+Konsep Push (menambahkan data) dan Pop (menghapus data) digunakan untuk memanipulasi Stack dalam aplikasi ini. Penggunaan metode ini membantu menjaga data tetap konsisten dan mempermudah pengelolaan transaksi secara sistematis.
+
+Metode
+
+RANCANGAN
+
+Pada tahap rancangan, aplikasi peminjaman dan pengembalian buku dirancang dengan memperhatikan alur sistem yang melibatkan berbagai jenis pengguna, fungsi utama, serta data pendukung. Sistem ini dirancang untuk diakses oleh Admin Perpustakaan, Petugas Perpustakaan, dan Supervisor Perpustakaan, masing-masing memiliki akses terhadap fitur sesuai dengan tugasnya.
+Rancangan
+
+Rancangan aplikasi mencakup empat fungsi utama:
+Transaksi: Meliputi peminjaman, pengembalian, perpanjangan buku, dan penghitungan denda keterlambatan.
+Manajemen Buku: Menambah, mencari, memperbarui data buku, serta mengelola katalog buku secara digital.
+Manajemen Anggota: Mengelola data anggota, termasuk pendaftaran, pengelolaan profil, dan riwayat peminjaman.
+Pelaporan: Menyediakan laporan aktivitas perpustakaan, statistik buku populer, dan laporan keterlambatan secara akurat.
+Seluruh fungsi ini saling terintegrasi melalui data pendukung, seperti data buku, data anggota, data transaksi, dan data denda, yang memastikan pengelolaan perpustakaan berjalan secara efisien dan terorganisir. Diagram alur sistem memberikan gambaran menyeluruh tentang interaksi antar komponen di dalam aplikasi.
+
+Rancangan
+
+HASIL APLIKASI
+
+Hasil Aplikasi (Login)
+
+Hasil Aplikasi (Register New Book)
+
+Hasil Aplikasi (View Book Catalog)
+
+Hasil Aplikasi (Search Book)
+
+Hasil Aplikasi (Update Book Information)
+
+Hasil Aplikasi (View Book Catalog - After Update)
+
+Hasil Aplikasi (Delete Book)
+
+Hasil Aplikasi (View Book Catalog - After Delete)
+
+Hasil Aplikasi (Register New Member)
+
+Hasil Aplikasi (View Member)
+
+Hasil Aplikasi (Search Member)
+
+Hasil Aplikasi (Update Member Profile)
+
+Hasil Aplikasi (View Member - After Update)
+
+Hasil Aplikasi (Delete Member)
+
+Hasil Aplikasi (View Member - After Delete)
+
+Hasil Aplikasi (Borrow Book)
+
+Hasil Aplikasi (View Transactions - After Borrow Book)
+
+Hasil Aplikasi (Extend Borrowing)
+
+Hasil Aplikasi (View Transactions - After Extend Borrowing)
+
+Hasil Aplikasi (Return Book)
+
+Hasil Aplikasi (View Transactions - After Return)
+
+KESIMPULAN
+
+Kesimpulan
+Aplikasi Peminjaman dan Pengembalian Buku berbasis C++ yang dikembangkan oleh Kelompok 7 memanfaatkan struktur data Stack untuk mengelola proses transaksi dengan efisien. Implementasi konsep Last In, First Out (LIFO) melalui metode seperti push(), pop(), top(), empty(), dan size() memungkinkan pengelolaan data peminjaman dan pengembalian buku secara terstruktur.
+Kelebihan aplikasi ini meliputi:
+Antarmuka pengguna yang sederhana dan intuitif.
+Mendukung pengelolaan data secara terorganisir berdasarkan prinsip LIFO.
+Memanfaatkan Standard Template Library (STL) di C++, sehingga mempercepat pengembangan.
+
+Kesimpulan
+Namun, terdapat beberapa keterbatasan:
+Struktur data Stack tidak mendukung traversal langsung, sehingga kurang optimal untuk kebutuhan akses acak.
+Cocok hanya untuk aplikasi yang mengutamakan urutan LIFO.
+Secara keseluruhan, aplikasi ini berhasil menjawab tantangan dalam pengelolaan perpustakaan tradisional, meningkatkan efisiensi, meminimalkan kesalahan pencatatan, dan mendukung pelacakan inventaris yang lebih modern.
+
+Ada Pertanyaan ?
+
+Terima Kasih 
